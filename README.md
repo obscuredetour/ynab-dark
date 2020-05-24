@@ -18,7 +18,7 @@ This is a dark theme for [You Need A Budget (YNAB)](https://www.youneedabudget.c
 
 ### Easy install
 
-[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-144b6c.svg)](https://github.com/obscuredetour/ynab-dark/raw/master/ynab-dark.user.css)
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-144b6c.svg)](https://github.com/obscuredetour/ynab-dark/raw/master/css/ynab-dark.user.css)
 
 ## Table of Contents
 
