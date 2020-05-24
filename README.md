@@ -20,9 +20,6 @@ This is a dark theme for [You Need A Budget (YNAB)](https://www.youneedabudget.c
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-144b6c.svg)](https://github.com/obscuredetour/ynab-dark/raw/master/ynab-dark.user.css)
 
-The Dark theme colors can be [seen here](#colors). Accent colors are green (jade) and background colors are dark gray.
-
-
 ## Table of Contents
 
 1. [Preview](#preview)
