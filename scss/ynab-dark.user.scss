@@ -1,0 +1,85 @@
+@import 'base';
+
+@include wrapper {
+  :root {
+    --default_background: #{$dust};
+    --default_text: #{$alto};
+
+    --checkbox_background: #{$stone};
+    --checkbox_border: #{$mine};
+    --header_background: #{$daintree};
+    --table_row_background_default: var(--dust);
+    --table_row_background_selected: #{$stone};
+    --table_row_text_default: #e4e7eb;
+    --table_row_text_default_subdued: #a0a4a7;
+    --table_header_background_default: var(--table_row_background_selected);
+    --table_header_text_default: #f5f7fa;
+    --table_header_text_default_subdued: #e4e7eb;
+    --table_header_text_subdued: #{hsl(198, 100%, 87%)};
+
+    --register_scheduled_transaction_toggle_background: #{$raven};
+    --register_status_scheduled_background: #{$mine};
+    --toolbar_background: var(--default_background);
+    
+    --sidebar_background: #{$jet};
+    --sidebar_button_background_selected: #{$surf};
+
+    --sidebar_button_secondary_background_active: #{$chill};
+    --sidebar_button_secondary_background: #{$surf};
+
+    // --sidebar_button_text: 
+
+    --checkbox_foreground_selected: #{$sea-spray};
+
+    --primary_button_background_active: #{$surf};
+    --primary_button_background: #{$chill};
+
+    --alertbar_background: #{$atoll};
+    --alertbar_background_hover: #{$surf};
+
+    --inspector_background: #{$raven};
+    --inspector_default_text_subdued: #{$alabaster};
+    --inspector_default_text: #{$pearl};
+    --inspector_quickbudget_button_background: transparentize($daintree, 0.8);
+    --inspector_quickbudget_button_background_active: transparentize($teal, 0.7);
+    --inspector_quickbudget_button_text: #{azure};
+    
+    --primary_action: #{$scooter};
+    --primary_action_active: #{hsl(192, 70%, 66%)};
+    --primary_action_disabled: #{hsl(192, 70%, 30%)};
+    
+    --divider: #8da4b930;
+    
+    --budget_balance_zero_background: #{hsl(209, 14%, 20%)};
+    --budget_balance_zero_text: #95a4aa;
+
+    // pills
+    --register_status_uncategorized_text: #{$sweet-corn};
+    --register_status_uncategorized_background: #{$deep-bronze};
+
+    --budget_balance_positive_background: #{$genoa};
+    --budget_balance_positive_background_active: #{$elm};--budget_balance_positive_text: #{$white-ice};
+
+    --budget_balance_negative_background: #{$red-oxide};
+    --budget_balance_negative_background_active: #{$burgundy};--budget_balance_negative_text: #{$azelea};
+
+    --register_flag_none_background: #{$mine};
+
+
+    // budget header
+    --tbb_positive_background: #{$sea-green};
+    --header_age_of_money_text: #{$green};
+
+    --positive_text: #{$elm};
+    --header_positive_text: #{$keppel};
+  }
+  
+  .budget-table-container .budget-table {
+    scrollbar-color: transparent transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  .budget-table-container .budget-table {
+    scrollbar-color: #9aa5b1 #1f2933;
+    transition: all 0.3s ease-in-out;
+  }
+}

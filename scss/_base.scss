@@ -1,0 +1,76 @@
+/* ==UserStyle==
+@name        YNAB dark theme
+@namespace   https://github.com/obscuredetour/
+@version     0.0.2
+@license     MIT
+@author      obscure detour (https://www.jeffreysummers.me)
+@homepageURL https://github.com/obscuredetour/ynab-dark
+@updateURL   https://github.com/obscuredetour/ynab-dark/raw/master/css/ynab-dark.user.css
+==/UserStyle== */
+
+// Mixins
+@mixin wrapper(){  
+  @-moz-document domain("youneedabudget.com") {
+    @content;
+  }
+}
+
+// Colors
+
+// background colors & shades of grays
+$jet: hsl(0, 0%, 13%);
+$space: hsl(0, 0%, 15%);
+$dust: hsl(0, 0%, 19%);
+$raven: hsl(0, 0%, 23%);
+$stone: hsl(0, 0%, 27%);
+$mine: hsl(0, 0%, 32%);
+$asher: hsl(0, 0%, 38%);
+$boulder: hsl(0, 0%, 49%);
+$heather: hsl(0, 0%, 62%);
+$gray: hsl(0, 0%, 69%);
+$alto: hsl(0, 0%, 81%);
+$pearl: hsl(0, 0%, 88%);
+$alabaster: hsl(0, 0%, 97%);
+
+// accents
+$daintree       : hsl(186, 93%, 12%);
+$teal           : hsl(184, 91%, 17%);
+$atoll          : hsl(185, 84%, 25%);
+$surf           : hsl(185, 81%, 29%);
+$chill          : hsl(184, 77%, 34%);
+$scooter        : hsl(185, 62%, 45%);
+$pelorous       : #37bcc8;
+$cyan           : hsl(184, 65%, 59%);
+$sea-spray      : hsl(184, 80%, 74%);
+$azure          : hsl(185, 94%, 87%);
+$baby-blue      : hsl(186, 100%, 94%);
+
+$deep-bronze    : #513C06;
+$spicy-mustard  : #7C5E10;
+$hokey-pokey    : #C99A2E;
+$sweet-corn     : #F9DA8B;
+
+
+//greens
+$aqua-deep        : hsl(170, 97%, 15%); // #014D40
+$sea-green        : hsl(168, 80%, 23%); // #0C6B58
+$genoa            : hsl(166, 72%, 28%); // #147D64
+$elm              : hsl(164, 71%, 34%); // #199473
+$keppel           : hsl(162, 63%, 41%); // #27AB83
+$green            : hsl(160, 51%, 49%); // #3EBD93
+$downy            : hsl(158, 58%, 62%); // #65D6AD
+$riptide          : hsl(156, 73%, 74%); // #8EEDC7
+$humming-bird     : hsl(154, 75%, 87%); // #C6F7E2
+$white-ice        : hsl(152, 68%, 96%); // #EFFCF6
+
+//reds
+$red-oxide        : hsl(360, 92%, 17%);  // #610404
+$burgundy         : hsl(360, 85%, 22%);  // #780A0A
+$tamarillo        : hsl(360, 79%, 32%);  // #911111
+$terracotta       : hsl(360, 72%, 38%);  // #A61B1B
+$poppy            : hsl(360, 67%, 44%);  // #BA2525
+$valencia         : hsl(360, 64%, 55%);  // #D64545
+$sunglo           : hsl(360, 71%, 66%);  // #E66A6A
+$wewak            : hsl(360, 77%, 78%);  // #F29B9B
+$azelea           : hsl(360, 82%, 89%);  // #FACDCD
+$fair-pink        : hsl(360, 100%, 97%); // #FFEEEE

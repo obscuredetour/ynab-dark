@@ -1,0 +1,71 @@
+/* ==UserStyle==
+@name        YNAB dark theme
+@namespace   https://github.com/obscuredetour/
+@version     0.0.2
+@license     MIT
+@author      obscure detour (https://www.jeffreysummers.me)
+@homepageURL https://github.com/obscuredetour/ynab-dark
+@updateURL   https://github.com/obscuredetour/ynab-dark/raw/master/css/ynab-dark.user.css
+==/UserStyle== */
+@-moz-document domain("youneedabudget.com") {
+  :root {
+    --default_background: #303030;
+    --default_text: #cfcfcf;
+    --checkbox_background: #454545;
+    --checkbox_border: #525252;
+    --header_background: #02353b;
+    --table_row_background_default: var(--dust);
+    --table_row_background_selected: #454545;
+    --table_row_text_default: #e4e7eb;
+    --table_row_text_default_subdued: #a0a4a7;
+    --table_header_background_default: var(--table_row_background_selected);
+    --table_header_text_default: #f5f7fa;
+    --table_header_text_default_subdued: #e4e7eb;
+    --table_header_text_subdued: #bdebff;
+    --register_scheduled_transaction_toggle_background: #3b3b3b;
+    --register_status_scheduled_background: #525252;
+    --toolbar_background: var(--default_background);
+    --sidebar_background: #212121;
+    --sidebar_button_background_selected: #0e7c86;
+    --sidebar_button_secondary_background_active: #149199;
+    --sidebar_button_secondary_background: #0e7c86;
+    --checkbox_foreground_selected: #88ebf2;
+    --primary_button_background_active: #0e7c86;
+    --primary_button_background: #149199;
+    --alertbar_background: #0a6c75;
+    --alertbar_background_hover: #0e7c86;
+    --inspector_background: #3b3b3b;
+    --inspector_default_text_subdued: #f7f7f7;
+    --inspector_default_text: #e0e0e0;
+    --inspector_quickbudget_button_background: rgba(2, 53, 59, 0.2);
+    --inspector_quickbudget_button_background_active: rgba(4, 78, 83, 0.3);
+    --inspector_quickbudget_button_text: azure;
+    --primary_action: #2caeba;
+    --primary_action_active: #6ccde5;
+    --primary_action_disabled: #176d82;
+    --divider: #8da4b930;
+    --budget_balance_zero_background: #2c333a;
+    --budget_balance_zero_text: #95a4aa;
+    --register_status_uncategorized_text: #F9DA8B;
+    --register_status_uncategorized_background: #513C06;
+    --budget_balance_positive_background: #147b63;
+    --budget_balance_positive_background_active: #199473;
+    --budget_balance_positive_text: #eefcf5;
+    --budget_balance_negative_background: #530303;
+    --budget_balance_negative_background_active: #680808;
+    --budget_balance_negative_text: #facccc;
+    --register_flag_none_background: #525252;
+    --tbb_positive_background: #0c6a57;
+    --header_age_of_money_text: #3dbd92;
+    --positive_text: #199473;
+    --header_positive_text: #27aa83; }
+
+  .budget-table-container .budget-table {
+    scrollbar-color: transparent transparent;
+    transition: all 0.3s ease-in-out; }
+
+  .budget-table-container .budget-table {
+    scrollbar-color: #9aa5b1 #1f2933;
+    transition: all 0.3s ease-in-out; } }
+
+/*# sourceMappingURL=ynab-dark.user.css.map */
