@@ -2,13 +2,13 @@
   <img width=580px src="img/ynab-dark-logo.svg">
   <br>
   <a style="display: inline-block" href="https://github.com/obscuredetour/ynab-dark/">
-    <img alt="Maintained?" src="https://img.shields.io/maintenance/yes/2020.svg?colorB=%230A6C74">
+    <img alt="Maintained?" src="https://img.shields.io/maintenance/yes/2020.svg?colorB=%23144b6c">
   </a>
   <a href="https://github.com/obscuredetour/ynab-dark/commits/master">
-    <img alt="Last commit" src="https://img.shields.io/github/last-commit/obscuredetour/dark-co-sun.svg?colorB=%2314919B">
+    <img alt="Last commit" src="https://img.shields.io/github/last-commit/obscuredetour/ynab-dark.svg?colorB=%23144b6c">
   </a>
   <a href="https://github.com/obscuredetour/ynab-dark/tags">
-    <img alt="GitHub tag (latest SemVer)" src="https://img.shields.io/github/tag/obscuredetour/dark-co-sun.svg?color=%2314919B&label=version">
+    <img alt="GitHub tag (latest SemVer)" src="https://img.shields.io/github/tag/obscuredetour/ynab-dark.svg?color=%23144b6c&label=version">
   </a>
   
 </p>
@@ -18,7 +18,7 @@ This is a dark theme for [You Need A Budget (YNAB)](https://www.youneedabudget.c
 
 ### Easy install
 
-[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-0A6C74.svg)](https://github.com/obscuredetour/ynab-dark/raw/master/ynab-dark.user.css)
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-144b6c.svg)](https://github.com/obscuredetour/ynab-dark/raw/master/ynab-dark.user.css)
 
 The Dark theme colors can be [seen here](#colors). Accent colors are green (jade) and background colors are dark gray.
 
@@ -27,9 +27,8 @@ The Dark theme colors can be [seen here](#colors). Accent colors are green (jade
 
 1. [Preview](#preview)
 2. [How to use](#how-to-use)
-3. [Contributing](#contributing)
-4. [Colors](#colors)
-5. [Notes](#notes)
+3. [Notes](#notes)
+4. [Contributing](#contributing)
 
 ## Preview
 
@@ -46,50 +45,38 @@ A userstyle extension for your browser is required, here are a few to choose fro
 
 - [Stylus](https://github.com/openstyles/stylus) for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en), or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
 
+<small>The Chrome extension also works for Edge.</small>
+
 Install the dark theme with the link below. Supports automatic updates.
 
 - [Install YNAB Dark](https://github.com/obscuredetour/ynab-dark/raw/master/ynab-dark.user.css)
 
 Then, the raw file will open in the browser and the extension will open a new tab asking to install it. After clicking *'install style'*, you're finished.
 
-Copy and pasting the [ynab-dark.user.css](https://github.com/obscuredetour/ynab-dark/raw/master/ynab-dark.user.css) file into the extension also works.
+Copy and pasting the [ynab-dark.user.css](https://github.com/obscuredetour/ynab-dark/raw/master/css/ynab-dark.user.css) file into the extension also works.
 
 Further instructions can be found [here](https://github.com/openstyles/stylus/wiki/UserCSS#usercss-file).
 
 **[Back to top](#table-of-contents)**
 
-## Colors
+## Notes
 
-More coming soon.
+#### How? 0.0.2 -> 1.0.0?
+Preliminarly repository setup and initial color selection occured prior to finding YNAB's offical dark theme colors. This dark theme was found in their current CSS files being served to YNAB customers (2020/05). This made the project a lot easier. See below for more info.
 
-```
-// background colors & shades of grays
-$jet: hsl(0, 0%, 13%);
-$space: hsl(0, 0%, 15%);
-$dust: hsl(0, 0%, 19%);
-$raven: hsl(0, 0%, 23%);
-$stone: hsl(0, 0%, 27%);
-$mine: hsl(0, 0%, 32%);
-$asher: hsl(0, 0%, 38%);
-$boulder: hsl(0, 0%, 49%);
-$heather: hsl(0, 0%, 62%);
-$gray: hsl(0, 0%, 69%);
-$alto: hsl(0, 0%, 81%);
-$pearl: hsl(0, 0%, 88%);
-$alabaster: hsl(0, 0%, 97%);
-```
+#### Official YNAB Dark theme
+For reference, included is YNAB's offical [dark theme snippet](css/ynab-dark-official.css) found in their website's CSS. This can be found in this project's `/css` directory and also linked above. This became the project's foundation that it was built upon.
+
+#### Why hasn't YNAB released this if it exists?
+Good question, don't know. Best guess, is that it isn't quite done. Found within their dark theme are some items that are  a bit off and/or oddly colored.
+
+### Colors
+Quite a bit of their colors are modified, but not too overtly or drastically. Mostly just toned down while introducing more grays and less stark whites.
 
 **[Back to top](#table-of-contents)**
 
 ## Contributing
 
 Open an issue first to discuss potential changes/additions.
-
-**[Back to top](#table-of-contents)**
-
-## Notes
-
-
-
 
 **[Back to top](#table-of-contents)**

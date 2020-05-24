@@ -1,85 +1,267 @@
 @import 'base';
 
 @include wrapper {
-  :root {
-    --default_background: #{$dust};
-    --default_text: #{$alto};
-
-    --checkbox_background: #{$stone};
-    --checkbox_border: #{$mine};
-    --header_background: #{$daintree};
-    --table_row_background_default: var(--dust);
-    --table_row_background_selected: #{$stone};
-    --table_row_text_default: #e4e7eb;
-    --table_row_text_default_subdued: #a0a4a7;
-    --table_header_background_default: var(--table_row_background_selected);
-    --table_header_text_default: #f5f7fa;
-    --table_header_text_default_subdued: #e4e7eb;
-    --table_header_text_subdued: #{hsl(198, 100%, 87%)};
-
-    --register_scheduled_transaction_toggle_background: #{$raven};
-    --register_status_scheduled_background: #{$mine};
-    --toolbar_background: var(--default_background);
-    
-    --sidebar_background: #{$jet};
-    --sidebar_button_background_selected: #{$surf};
-
-    --sidebar_button_secondary_background_active: #{$chill};
-    --sidebar_button_secondary_background: #{$surf};
-
-    // --sidebar_button_text: 
-
-    --checkbox_foreground_selected: #{$sea-spray};
-
-    --primary_button_background_active: #{$surf};
-    --primary_button_background: #{$chill};
-
-    --alertbar_background: #{$atoll};
-    --alertbar_background_hover: #{$surf};
-
-    --inspector_background: #{$raven};
-    --inspector_default_text_subdued: #{$alabaster};
-    --inspector_default_text: #{$pearl};
-    --inspector_quickbudget_button_background: transparentize($daintree, 0.8);
-    --inspector_quickbudget_button_background_active: transparentize($teal, 0.7);
-    --inspector_quickbudget_button_text: #{azure};
-    
-    --primary_action: #{$scooter};
-    --primary_action_active: #{hsl(192, 70%, 66%)};
-    --primary_action_disabled: #{hsl(192, 70%, 30%)};
-    
-    --divider: #8da4b930;
-    
-    --budget_balance_zero_background: #{hsl(209, 14%, 20%)};
-    --budget_balance_zero_text: #95a4aa;
-
-    // pills
-    --register_status_uncategorized_text: #{$sweet-corn};
-    --register_status_uncategorized_background: #{$deep-bronze};
-
-    --budget_balance_positive_background: #{$genoa};
-    --budget_balance_positive_background_active: #{$elm};--budget_balance_positive_text: #{$white-ice};
-
-    --budget_balance_negative_background: #{$red-oxide};
-    --budget_balance_negative_background_active: #{$burgundy};--budget_balance_negative_text: #{$azelea};
-
-    --register_flag_none_background: #{$mine};
-
-
-    // budget header
-    --tbb_positive_background: #{$sea-green};
-    --header_age_of_money_text: #{$green};
-
-    --positive_text: #{$elm};
-    --header_positive_text: #{$keppel};
+  body {
+    scrollbar-color: #3a3a3c #2c2c2e;
+    --accountwidget_account_list_item_background: #1c1c1e;
+    --accountwidget_accounttype_background: #3a3a3c;
+    --accountwidget_accounttype_background_active: #48484a;
+    --accountwidget_background: #2c2c2e;
+    --accountwidget_connected_card_active: #3a3a3c;
+    --accountwidget_connections_update_notification_background: #1c1c1e;
+    --accountwidget_connectiontip_background: #{rgba(253, 190, 42, 0.12)};
+    --accountwidget_connectiontip_border: #{rgba(0, 0, 0, 0.06)};
+    --accountwidget_connectiontip_heading: #1f1b13;
+    --accountwidget_connectiontip_icon: #9e8c62;
+    --accountwidget_connectiontip_text: #{rgba(51, 51, 51, 0.75)};
+    --accountwidget_help_background: #36284d;
+    --accountwidget_help_icon: #b087c4;
+    --accountwidget_help_link: #b087c4;
+    --accountwidget_illustration_background: #d8e9f7;
+    --alertbar_background: #25384f;
+    --alertbar_background_active: #25384f;
+    --alertbar_background_hover: #213247;
+    --alertbar_text_default: #fff;
+    --banner_bottom_notice_background: #ca481d;
+    --banner_bottom_notice_background_active: #932810;
+    --banner_bottom_notice_text: #fff;
+    --budget_balance_negative_background: #{hsl(11, 70%, 22%)};
+    --budget_balance_negative_background_active: #9b2b11;
+    --budget_balance_negative_icon: #fff;
+    --budget_balance_negative_text: #fff;
+    --budget_balance_negative_text: #{hsl(0, 22%, 81%)};
+    --budget_balance_positive_background: #{hsl(151, 70%, 19%)};
+    --budget_balance_positive_background_active: #{hsl(151, 75%, 24%)};
+    --budget_balance_positive_icon: #fff;
+    --budget_balance_positive_text: #{hsl(0, 0%, 94%)};
+    --budget_balance_warning_background: #673b0a;
+    --budget_balance_warning_background_active: #9d5a0f;
+    --budget_balance_warning_icon: #fff;
+    --budget_balance_warning_text: #fff;
+    --budget_balance_zero_background: #3a3a3c;
+    --budget_balance_zero_icon: #d1d1d6;
+    --budget_balance_zero_text: #c7c7cc;
+    --budget_bar_background: #2c2c2e;
+    --budget_bar_empty: #48484a;
+    --budgets_thumbnail_background: #48484a;
+    --calendar_month_hover: #4594d6;
+    --checkbox_background: #{hsl(192, 0%, 32%)};
+    --checkbox_background_selected: #{hsl(192, 82%, 32%)};
+    --checkbox_border: #97979f;
+    --checkbox_foreground_selected: #fff;
+    --dashboard_button_background: #3a3a3c;
+    --dashboard_button_background_active: #48484a;
+    --default_background: #{hsl(0, 0%, 14%)};
+    --default_background_dark: #2c2c2e;
+    --default_text: #{hsl(0, 0%, 88%)};
+    --default_text_dark: #{hsl(0, 0%, 97%)};
+    --destructive_action: #e26136;
+    --destructive_action_active: #eb7a5b;
+    --destructive_button_text: #fff;
+    --divider: #{rgba(84, 84, 88, 0.55)};
+    --divider_strong: #{rgba(84, 84, 88, 0.75)};
+    --divider_subdued: #{rgba(84, 84, 88, 0.45)};
+    --flash_notification_background: #2c2c2e;
+    --header_background: #2c2c2e;
+    --header_default_text: #fff;
+    --header_default_text_subdued: #{hsla(0, 0%, 100%, 0.7)};
+    --header_divider: #{rgba(84, 84, 88, 0.65)};
+    --header_negative_text: #e26136;
+    --header_positive_text: #{hsl(151, 55%, 54%)};
+    --icon_fill: #aeaeb2;
+    --icon_fill_disabled: #8e8e93;
+    --inspector_alert_background: #651c0b;
+    --inspector_alert_text: #f49e8b;
+    --inspector_background: #1c1c1e;
+    --inspector_confirmation_background: #324412;
+    --inspector_confirmation_text: #cdea9f;
+    --inspector_default_text: #fff;
+    --inspector_default_text_subdued: #c7c7cc;
+    --inspector_divider: #{rgba(0, 0, 0, 0.15)};
+    --inspector_goal_message_warning_text: #fef6e1;
+    --inspector_goals_icon_dark: #636366;
+    --inspector_goals_icon_light: #aeaeb2;
+    --inspector_negative_text: #e26136;
+    --inspector_positive_text: #80b83d;
+    --inspector_progressbar_background: #2c2c2e;
+    --inspector_quickbudget_button_background: #2c2c2e;
+    --inspector_quickbudget_button_background_active: #{var(--sidebar_button_background_selected)};
+    --inspector_quickbudget_button_text: #{hsl(0, 0%, 85%)};
+    --inspector_quickbudget_button_text_active: #fff;
+    --inspector_section_heading_background: #2c2c2e;
+    --inspector_section_heading_text: #fff;
+    --inspector_warning_background: #673b0a;
+    --inspector_warning_text: #fef6e1;
+    --loading_action: #fff;
+    --loading_action_active: #8e8e93;
+    --loading_background: #101010;
+    --loading_shimmer_background: #fff;
+    --loading_shimmer_background_faded: #{hsla(0, 0%, 100%, 0.8)};
+    --login_background_default: #171c26;
+    --login_banner_action: #fff;
+    --login_banner_action_active: #d1d1d6;
+    --login_banner_background: #12161e;
+    --login_banner_text: #fff;
+    --login_users_banner_action: #fff;
+    --login_users_banner_action_active: #48484a;
+    --login_users_banner_background: #a8d8f0;
+    --login_users_banner_text: #fff;
+    --modal_background: #2c2c2e;
+    --modal_background_dark: #171c26;
+    --modal_row_background_active: #48484a;
+    --negative_text: #e26136;
+    --onboarding_background_default: #3a3a3c;
+    --onboarding_last_step: #25384f;
+    --onboarding_progress_circle_background: #1c1c1e;
+    --onboarding_progress_circle_border: #636366;
+    --onboarding_progress_circle_current_border: #4594d6;
+    --onboarding_progress_circle_next: #a8d8f0;
+    --onboarding_progress_circle_next_border: #4594d6;
+    --onboarding_progress_tree_empty: #636366;
+    --onboarding_step_one_hover: #26320b;
+    --onboarding_step_one_selected: #6d9f38;
+    --onboarding_step_one_unselected: #324412;
+    --onboarding_step_two_hover: #36284d;
+    --onboarding_step_two_selected: #9569b8;
+    --onboarding_step_two_unselected: #4e3465;
+    --positive_text: #80b83d;
+    --positive_text: #{hsl(151, 50%, 54%)};
+    --positive_text_active: #9ad05d;
+    --primary_action: #{hsl(198, 39%, 55%)};
+    --primary_action_active: #59b2eb;
+    --primary_action_highlighted: #6aa9de;
+    --primary_action_subdued: #3776ab;
+    --primary_action_disabled: #{hsla(198, 39%, 55%, .6)};
+    --primary_button_background: #{hsl(202, 69%, 25%)};
+    --primary_button_background_active: #{hsl(205, 69%, 40%)};
+    --primary_button_text: #fff;
+    --register_balance_negative: #e26136;
+    --register_flag_none_background: #636366;
+    --register_flag_primary_background: #ff453a;
+    --register_flag_quarternary_background: #32d74b;
+    --register_flag_quinary_background: #64d2ff;
+    --register_flag_secondary_background: #ff9f0a;
+    --register_flag_senary_background: #bf5af2;
+    --register_flag_tertiary_background: #ffd60a;
+    --register_icons_fill_default: #636366;
+    --register_scheduled_transaction_toggle_background: #3a3a3c;
+    --register_status_cleared: #80b83d;
+    --register_status_scheduled_background: #48484a;
+    --register_status_scheduled_text: #d1d1d6;
+    --register_status_uncategorized_background: #673b0a;
+    --register_status_uncategorized_text: #fef6e1;
+    --register_status_uncleared: #aeaeb2;
+    --reports_eight: #fdcb55;
+    --reports_eleven: #636366;
+    --reports_five: #6d9f38;
+    --reports_four: #b087c4;
+    --reports_header_button_background: #1c1c1e;
+    --reports_header_button_text: #fff;
+    --reports_header_button_text_active: #fff;
+    --reports_header_button_text_selected: #fff;
+    --reports_networth_assets_background: #3673a6;
+    --reports_networth_debts_background: #ca481d;
+    --reports_nine: #932810;
+    --reports_one: #3673a6;
+    --reports_seven: #e0a41a;
+    --reports_six: #9ad05d;
+    --reports_ten: #e26136;
+    --reports_three: #744893;
+    --reports_two: #59b2eb;
+    --scrim_default: #{rgba(110, 118, 125, 0.45)};
+    --scrim_invisible: transparent;
+    --scrim_strong: #{rgba(110, 118, 125, 0.6)};
+    --secondary_action: #636366;
+    --secondary_action_active: #bebec1;
+    --secondary_action_border: #636366;
+    --secondary_action_disabled: #48484a;
+    --secondary_button_text: #fff;
+    --sidebar_account_negative_balance_background: #3a3a3c;
+    --sidebar_background: #1c1c1e;
+    --sidebar_button_background_active: #{hsl(202, 5%, 20%)};
+    --sidebar_button_background_selected: #{hsl(202, 69%, 25%)};
+    --sidebar_button_secondary_background: #2f2f31;
+    --sidebar_button_secondary_background_active: #{hsl(0, 0%, 20%)};
+    --sidebar_button_secondary_background_pressed: #606061;
+    --sidebar_button_text: #e0e0e0;
+    --sidebar_button_text_subdued: #{hsla(0, 0%, 100%, 0.7)};
+    --sidebar_divider: #{rgba(0, 0, 0, 0.15)};
+    --sidebar_icon_accounts_selected: #4594d6;
+    --sidebar_icon_fill_default: #fff;
+    --sidebar_text_default: #fff;
+    --sidebar_text_subdued: #{hsla(0, 0%, 100%, 0.75)};
+    --status_negative: #932810;
+    --table_header_background_default: #{hsl(0, 0%, 15%)};
+    --table_header_text_default: #{hsl(202, 0%, 95%)};
+    --table_header_text_subdued: #{hsl(200, 1%, 60%)};
+    --table_row_background_default: #2d2d2d;
+    --table_row_background_selected: #{hsl(203, 2%, 30%)};
+    --table_row_divider: #{rgba(84, 84, 88, 0.65)};
+    --table_row_text_default: #{hsl(204, 0%, 85%)};
+    --table_row_text_default_subdued: #{hsl(204, 0%, 55%)};
+    --table_row_text_selected: #fff;
+    --table_row_text_selected_subdued: #{hsla(0, 0%, 100%, 0.7)};
+    --tbb_default_text: #fff;
+    --tbb_negative_background: #651c0b;
+    --tbb_positive_background: #324412;
+    --tbb_positive_background: #{var(--budget_balance_positive_background)};
+    --tbb_secondary_text: #{hsl(109, 58%, 85%)};
+    --tertiary_action: #a8d8f0;
+    --tertiary_action_active: #4594d6;
+    --textinput_background: #3a3a3c;
+    --textinput_background_disabled: #8e8e93;
+    --textinput_border: #636366;
+    --toolbar_background: #1c1c1e;
+    --warning_text: #e9b92a;
+    --white: #fff;
+    --header_age_of_money_text: #{var(--positive_text)};
   }
-  
+
+  body ::-webkit-scrollbar {
+    background: #1c1c1e
+  }
+
+  body ::-webkit-scrollbar-thumb {
+    background: #3a3a3c;
+    border-radius: 10rem
+  }
+
+  body ::-webkit-scrollbar-corner {
+    background: #2c2c2e
+  }
+
+  ::selection {
+    background: #626262;
+    color: white;
+  }
+
   .budget-table-container .budget-table {
     scrollbar-color: transparent transparent;
     transition: all 0.3s ease-in-out;
   }
+
   .budget-table-container .budget-table {
     scrollbar-color: #9aa5b1 #1f2933;
     transition: all 0.3s ease-in-out;
+  }
+
+  .ynab-grid-body-row:nth-of-type(even) {
+    background-color: #{hsl(0, 0%, 20%)};
+  }
+
+  .ynab-grid-body-row:not(.ynab-grid-spacer) {
+    height: 40px;
+  }
+
+  .date-range .date-range-dates li:not(.active) button {
+    color: #{var(--table_header_text_subdued)};
+  }
+
+  .date-range .date-range-dates li:not(.active) button:hover {
+    color: #{var(--table_header_text_default)};
+  }
+
+  .button-cancel {
+    color: #{var(--table_row_text_default)};
   }
 }
